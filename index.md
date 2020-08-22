@@ -1,4 +1,4 @@
-## Welcome to Fred Zimmerman's Pages
+## Home
 
 This is the hub for my projects, past, present, and future.
 

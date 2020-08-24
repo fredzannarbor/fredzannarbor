@@ -20,9 +20,10 @@ theme: jekyll-theme-architect
 title: Fred Zimmerman
 
 collections: 
- - books_in_print
- - altbrains
- - achievement_bullets
+  books_in_print:
+    output: true
+  altbrains:
+  achievement_bullets:
 
 google_analytics: UA-115655326-3
 

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Nimble Books in Print
+---
+<h1>Nimble Books In Print</h1>
+
+<ul>
+  {% for book in site.books_in_print %}
+    <li>
+      <h2>{{ books_in_print.title }}</h2>
+      <h3>{{ books_in_print.author }}</h3>
+      <p>{{ books_in_print..content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

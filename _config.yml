@@ -19,3 +19,10 @@ github_username:  fredzannarbor
 theme: jekyll-theme-architect
 title: Fred Zimmerman
 
+collections: 
+ - books_in_print
+ - altbrains
+ - achievement_bullets
+
+google_analytics: UA-115655326-3
+

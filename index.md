@@ -1,8 +1,9 @@
-## Home
+## My Coordinates
 
-This is the hub for my projects, past, present, and future.
+Fred Zimmerman
+2846 S. Knightsbridge Cir.
+Ann Arbor, MI 48105-9288
+fredzannarbor@gmail.com
 
-- Nimble Books LLC
-- AltBrains Workshop
-- Zeroth Draft
+
 

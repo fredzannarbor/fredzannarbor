@@ -15,6 +15,9 @@
 # Site settings
 twitter_username: fredzannarbor
 github_username:  fredzannarbor
+linkedin_username: wfzimmerman
+
+baseurl: /fredzannarbor
 
 theme: minima
 title: Fred Zimmerman

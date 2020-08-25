@@ -23,13 +23,13 @@ collections:
   books_in_print:
     output: true
     permalink: /:collection/:name
-    
+
   altbrains:
   achievement_bullets:
 
 google_analytics: UA-115655326-3
 
-url: "https://fredzannarbor.github.io/fredzannarbor"
+baseurl: "https://fredzannarbor.github.io/fredzannarbor"
 
 defaults:
   - scope:

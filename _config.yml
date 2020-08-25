@@ -13,9 +13,11 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # Site settings
-twitter_username: fredzannarbor
+
 github_username:  fredzannarbor
 linkedin_username: wfzimmerman
+twitter_username: fredzannarbor
+facebook_username: fred.zimmerman1
 
 theme: minima
 title: Fred Zimmerman

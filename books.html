@@ -7,9 +7,9 @@ title: Nimble Books in Print
 <ul>
   {% for book in site.books_in_print %}
     <li>
-      <h2><a href="{{ books_in_print.url }}">{{ books_in_print.title }}</a></h2>
-      <h3>{{ books_in_print.author }}</h3>
-      <p>{{ books_in_print.content | markdownify }}</p>
+      <h2><a href="{{ book.url }}">{{ book.title }}</a></h2>
+      <h3>{{ book.author }}</h3>
+      <p>{{ book.content | markdownify }}</p>
     </li>
   {% endfor %}
 </ul>

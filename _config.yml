@@ -29,7 +29,7 @@ collections:
 
 google_analytics: UA-115655326-3
 
-# baseurl: "https://fredzannarbor.github.io/fredzannarbor"
+baseurl: "https://fredzannarbor.github.io/fredzannarbor"
 
 defaults:
   - scope:

@@ -1,7 +1,17 @@
 ---
 layout: default
 ---
-<h1>{{ books_in_print.title }}</h1>
-<h2>{{ books_in_print.author }}</h2>
-{{ books_in_print.ISBN }}
+<h1>{{ page.title }}</h1>
+<h2>{{ page.author }}</h2>
+
+
+<strong>
+{{ page.series }} # {{ page.series_number }}
+</strong>
+
+
 {{ content }}
+
+ISBN: {{ page.ISBN }}
+
+<img src="/assets/images/{{page.cover_image}}">

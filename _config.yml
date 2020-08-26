@@ -20,23 +20,17 @@ collections:
 google_analytics: UA-115655326-3
 
 defaults:
- scope:
-     path: ""
-     type: "books_in_prints"
-   values:
-     layout: "books_in_print"
- scope:
-     path: ""
-     type: "posts"
-   values:
-     layout: "post"
- scope:
-     path: ""
-     type: "pages"
-   values:
-     layout: "page"
- scope:
-     path: ""
-   values:
-     layout: "default"
-
+  - scope:
+      path: ""
+      type: "books_in_print"
+    values:
+      layout: "books_in_print"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

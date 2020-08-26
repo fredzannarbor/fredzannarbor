@@ -7,4 +7,4 @@ series: Cool Ships
 series_number: 15
 ---
 
-This edited collection of 399 high-resolution color images  of USS BUNKER HILL and her crew illustrates the importance and diversity of life aboard a US Navy warship.  Included are copyrighted Nimble Awards for Outstanding Photograph and Outstanding National Service.
+This edited collection of 399 high-resolution color images of USS BUNKER HILL and her crew illustrates the importance and diversity of life aboard a US Navy warship.  Included are copyrighted Nimble Awards for Outstanding Photograph and Outstanding National Service.

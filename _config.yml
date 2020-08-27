@@ -26,7 +26,7 @@ collections:
 google_analytics: UA-115655326-3
 
 header_pages:
-
+  - about.html
 
 defaults:
   - scope:

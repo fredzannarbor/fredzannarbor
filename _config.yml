@@ -8,16 +8,24 @@ linkedin_username: wfzimmerman
 theme: minima
 title: Fred Zimmerman
 
-collections: 
+collections:
   books_in_print:
     output: true
     permalink: /:collection/:name
 
   altbrains:
-    
-  achievement_bullets:
+
+  achievements:
+    output: true
+    permalink: /:collection/:name
+
+  employers:
+    output: true
+    permalink: /:collection/:name
 
 google_analytics: UA-115655326-3
+
+
 
 defaults:
   - scope:
@@ -34,3 +42,18 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "achievements"
+    values:
+      layout: "achievement"
+  - scope:
+      path: ""
+      type: "employers"
+    values:
+      layout: "employer"
+  # - scope:
+  #     path: ""
+  #     type: "resume"
+  #   values:
+  #      layout: "achievement"

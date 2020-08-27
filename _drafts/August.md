@@ -1,0 +1,5 @@
+August has been a very difficult month for me with two immediate family members hospitalized for weeks with life-threatening illnesses, a promising business opportunity failing to develop as hoped, and our savings running low. (PSA: I need a job!) Nevertheless, I've been quite creative! 
+
+- I wrote a program that uses the API for the Defense Visual Information Distribution Systew (DVIDS) to search for all the images related to a particular unit (in this case, a ship), pull down their metadata, sort them by page views and other categories, then insert them all into a Microsoft Word document, where they become the raw material for the latest entries in my Cool Ships series for Nimble Books LLC.
+- Inspired by learning Python's docx library, I then wrote a script that takes a user's Facebook archive in json, extracts posts and comments, clusters them by similarity, then creates a Word document that is the "Zeroth Draft" of that book you've always wanted to write.  I plan to extend this to read Twitter, LinkedIn, and WordPress as well, and to plug in GPT-3 as soon as I can get access.
+- This long

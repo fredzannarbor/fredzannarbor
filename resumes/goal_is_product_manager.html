@@ -1,0 +1,20 @@
+---
+layout: default
+title: Product Management Achievements
+---
+<h1>Product Management Experience</h1>
+
+{% for item2 in site.employers %}
+{{ item2.content }}
+{{ item2.title}}
+
+<ul>
+{% for item in site.achievements %}
+
+  {% if item.employer == item2.title %}
+  <li>{{ item.content }}</li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% endfor %}

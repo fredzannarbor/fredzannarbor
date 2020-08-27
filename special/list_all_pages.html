@@ -1,0 +1,12 @@
+---
+layout: default
+title: Special page to list all pages
+---
+{% for page in site.pages %}
+<h2>Items from {{ page.path }}</h2>
+<ul>
+    {% for item in site[page.path] %}
+    <li><a href="{{ item.url }}">{{ item.path }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %}

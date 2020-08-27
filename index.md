@@ -16,7 +16,7 @@ mobile: +1.734-545-5369 | fredzannarbor at gmail doht com | Ann Arbor, Michigan,
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>

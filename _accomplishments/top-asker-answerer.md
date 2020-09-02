@@ -1,7 +1,6 @@
 ---
-job_title: independent developer
 resume_goal: developer_relations
-keywords: software, Javascript, developer, voice, multimodal
-employer: AltBrains Workshop
+keywords: software, Alteryx, data
+employer: Cengage
 ---
-Stimulated health of Samsung Bixby topic on StackOverflow by being [top question asker and top non-employee question answerer](https://stackoverflow.com/tags/bixby/topusers).
+Provided third-tier support to customers using Alteryx business intelligence platform for public libraries, with a focus on resolving deeply complex user questions about how the system understands and processes data.

@@ -1,6 +1,6 @@
 ---
 resume_goal: developer_relations
-keywords: software, Alteryx, data
-employer: Cengage
+keywords: software, Javascript
+employer: AltBrains Workshop
 ---
-Provided third-tier support to customers using Alteryx business intelligence platform for public libraries, with a focus on resolving deeply complex user questions about how the system understands and processes data.
+Stimulated growth of Samsung Bixby community by being [top third-party answerer/asker for Bixby category](https://stackoverflow.com/tags/bixby/topusers) on StackOverflow. 

@@ -15,7 +15,7 @@ collections:
 
   altbrains:
 
-  achievements:
+  accomplishments:
     output: true
     permalink: /:collection/:name
 
@@ -45,9 +45,9 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: "achievements"
+      type: "accomplishments"
     values:
-      layout: "achievement"
+      layout: "accomplishment"
   - scope:
       path: ""
       type: "employers"
@@ -57,4 +57,4 @@ defaults:
   #     path: ""
   #     type: "resume"
   #   values:
-  #      layout: "achievement"
+  #      layout: "accomplishment"

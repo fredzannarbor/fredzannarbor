@@ -1,0 +1,27 @@
+---
+layout: default
+title: Resumes by Goal
+---
+<p><strong>Goal: a position as a developer relations advocate</strong></p>
+
+{% for employer in site.employers %}
+
+{{ employer.content }}
+
+<ul>
+
+{% for accomplishment in site.accomplishments %}
+
+
+
+{% if accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer %}
+
+{{ accomplishment.content }}
+
+{% endif %}
+{% endfor %}
+</ul>
+
+
+
+{% endfor %}

@@ -4,4 +4,4 @@ resume_goal: developer_relations
 keywords: software, Python, developer, web, 21.co
 employer: PageKicker
 ---
-Improved transparency of community for 21.co API by sharing scripts to analyze new programs added to the 21.co Marketplace and to report on daily microtransactions.
+Improved developer visibility into 21.co prospects by sharing scripts to report daily transactions and to analyze rate of growth for new programs added to the 21.co Marketplace.

@@ -2,16 +2,11 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<h2>{{ page.author }}</h2>
+<h2>{{ page.Author }}</h2>
 
 <p><a href="{{ page.Amazon_URL }}">Buy at Amazon</a></p>
 
-<strong>
-{{ page.series }} # {{ page.series_number }}
-</strong>
 
 {{ content }}
 
-ISBN: {{ page.ISBN }}
 
-<img src="{{site.baseurl}}/assets/images/{{page.cover_image}}">

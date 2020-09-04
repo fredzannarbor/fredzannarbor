@@ -60,4 +60,47 @@ to_date: August 2019
 ---
 Product Manager, Acme Widgets May 2017 - August 2019
 
-5.  Note that we need to have a field that enables us to match accomplishments with the employers that own them.  In employers it is "title" and in _accomplishments it is "employer".
+5.  Note that we need to have a field that enables us to match accomplishments with the employers that own them.  In employers it is "title" and in _accomplishments it is "employer".  
+
+6. Now we create the "smart" part of the "smart resume."  We need some logic to pick out only the accomplishments that are relevant to the goal of the resume.  Jekyll uses the Liquid templating language which can do simple conditional logic and control operations inside HTML pages.  We create a page called "resume_by_goal.html" that will serve as the template for our smart resumes.
+
+To create a resume that emphasizes accomplishments relative to our goal, we are going to loop over the collection of employers, then look at each accomplishment belonging to that employer and determine whether it is relevant to our goal.  We accomplish this with nested for loops.
+
+The outer for loop iterates over our site's collection of employers.
+
+```
+---
+layout: default
+title: Resumes by Goal
+---
+<p><strong>Goal: a position as a developer relations advocate</strong></p>
+
+{% for employer in site.employers %}
+
+{{ employer.content }}
+
+{{ INNER FOR LOOP WILL GO HERE }}
+
+{% endfor %}
+
+```
+
+This loop alone creates output like the following:
+
+
+
+The inner for loop iterates over the accomplishments.
+
+
+
+<ul>
+
+{% for accomplishment in site.accomplishments %}
+
+{% if accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer %}
+
+{{ accomplishment.content }}
+
+{% endif %}
+{% endfor %}
+</ul>

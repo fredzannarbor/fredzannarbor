@@ -23,7 +23,5 @@ mobile: +1.734-545-5369 | fredzannarbor at gmail doht com | Ann Arbor, Michigan,
 
 ## Pages
 
-(Under construction)
-
 [Nimble Books in Print](books.html)
 

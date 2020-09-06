@@ -1,0 +1,16 @@
+---
+layout: default
+title: AltBrains
+---
+<h1>AltBrains</h1>
+
+<ul>
+  {% for altbrain in site.altbrains %}
+    <li>
+      <h2><a href="{{ altbrain.url | relative_url }}">{{ altbrain.title }}</a></h2>
+
+      <p>{{ altbrain.content | markdownify }}</p>
+
+    </li>
+  {% endfor %}
+</ul>

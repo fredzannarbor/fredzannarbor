@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<h2><a href="../altbrains.html">AltBrains</a> | <a href="{{ page.url | relative_url }}">{{ page.title }}</a></h2>
+
+
+
+
+<p>
+
+{{ content }}
+
+<p>{% assign twitter_url = "https://twitter.com/search?q=" %}
+
+
+
+{% if page.twitter_search_string %}
+<p>Twitter search: <a
+        href="{{ twitter_url | append: page.twitter_search_string }}">{{ twitter_url | append: page.twitter_search_string }}</a>
+    {% else %}
+
+    {% endif %}
+</p>
+
+
+<p><img src="{{ page.icon_image }}"></p>

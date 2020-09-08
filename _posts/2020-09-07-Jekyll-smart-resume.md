@@ -121,46 +121,5 @@ Now we put it together and try a test run.  We see that the program is successfu
 
 Here is the entire code so far:
 
-```
----
-layout: default
-title: Resumes by Goal
----
-<p><strong>Goal: a position as a developer relations advocate</strong></p>
-
-{% assign first_accomplishment = true %}
-
-{% for employer in site.employers %}
-
-{% for accomplishment in site.accomplishments %}
-
-{% if accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == true %}
-
-{{ employer.content }}
-
-<ul>
-
-<li>{{ accomplishment.content }}</li>
-
-{% assign first_accomplishment = false %}
-
-{% elsif accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == false %}
-
-<li>{{ accomplishment.content }}</li>
-
-{% assign first_accomplishment = false %}
-
-{% else %}
-
-{% endif %}
-
-{% endfor %}
-</ul>
-
-{% assign first_accomplishment = true %}
-
-{% endfor %}
-
-```
 In the next installment, we will tweak a few things like the sort order and add an Education block.
 

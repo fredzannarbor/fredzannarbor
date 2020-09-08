@@ -25,6 +25,10 @@ collections:
     output: true
     permalink: /:collection/:name
 
+  content:
+    output: true 
+    permalink: /:collection/:name
+
 google_analytics: UA-115655326-3
 
 header_pages:
@@ -36,6 +40,11 @@ defaults:
       type: "books_in_print"
     values:
       layout: "books_in_print"
+  - scope:
+      path: ""
+      type: "content"
+    values:
+      layout: "content"
   - scope:
       path: ""
       type: "altbrains"

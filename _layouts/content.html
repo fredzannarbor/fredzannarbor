@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h1><a href="../altbrains.html">AltBrains</a> | <a href="../altbrains/{{ page.identifier }}/">{{ page.identifier }}</a>
+<h2>{{ page.title }} </h2>
+
+<p>
+
+
+{{ content }}
+
+{% if page.related_url %}
+<p> <a
+        href="{{ page.related_url }}">Related content</a>
+    {% else %}
+
+    {% endif %}
+</p>
+
+<p>Content type: {{ page.contenttype }}</p>
+<p>Tags: {{ page.tags }}</p>
+
+<p><img src="{{ page.image_url }}"></p>

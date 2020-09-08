@@ -1,4 +1,4 @@
-# Writing a Smart Multipurpose Resume with Jekyll Collections
+# Writing a Smart Multipurpose Resume with Jekyll Collections (part 1 of n)
 
 Do you struggle with figuring out how best to summarize your diverse (and, perhaps, lengthy...) experience into a handful or two of machine-learning-friendly bullet points?
 Are you applying to several different types of jobs, perhaps seeking to make a career change?
@@ -6,6 +6,8 @@ Are you an inveterate tinkerer who likes to play around with technology?
 If so, consider using Jekyll Collections to make a "Smart" Multipurpose Resume.
 
 Jekyll is a popular free command-line program for Windows, Linux, or Mac that generates static web pages from your plain text or markdown documents. Crucially, it is used by GitHub's Pages platform, which provides an option for free web hosting; or you can upload the pages to your own server.
+
+## Using Jekyll Collections
 
 Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.
 
@@ -29,7 +31,7 @@ employers:
   permalink: /:collection/:name
 
 ```
-No underscores here!
+
 
 This makes Jekyll aware of the collections.
 
@@ -48,6 +50,7 @@ Reduced company spending by approximately $300,000 (25%) and reduced business ri
 ```
 4.  Each document in _employers describes one of your past employers.  Here is the document for my most recent employer:
 
+```
 ---
 layout: default
 title: Cengage Learning
@@ -55,10 +58,12 @@ from_date: May 2017
 to_date: August 2019
 ---
 Product Manager II, Cengage Learning May 2017 - October 2019
+```
+5.  Note that we need to have a match field that enables us to match accomplishments with the employers that own them.  In employers the field is called "title" and in _accomplishments it is "employer".  
 
-5.  Note that we need to have a field that enables us to match accomplishments with the employers that own them.  In employers the field is called "title" and in _accomplishments it is "employer".  
+## Using Liquid templating language
 
-6. Now we create the "smart" part of the "smart resume."  We need some logic to pick out only the accomplishments that are relevant to the goal of the resume.  Jekyll uses the Liquid templating language which can do simple conditional logic and control operations inside HTML pages. 
+Now we create the "smart" part of the "smart resume."  We need some logic to pick out only the accomplishments that are relevant to the goal of the resume.  Jekyll uses the Liquid templating language which can do simple conditional logic and control operations inside HTML pages. 
 
 To create a resume that emphasizes accomplishments relative to our goal, we are going to loop over the collection of employers, then look at each accomplishment belonging to that employer and determine whether it is relevant to our goal.  We accomplish this with nested for loops.
 
@@ -73,49 +78,21 @@ title: Resumes by Goal
 
 ```
 Then the page will proceed through its logic.  First, we initialize a variable to keep track of whether a bullet is the first one per employer.
-```
-{% assign first_accomplishment = true %}
 
-```
 Then, the  outer for loop iterates over our site's collection of employers.
 
-```
-{% for employer in site.employers %}
-...
-{% endfor %}
-```
 
 An inner for loop iterates over the accomplishments.
 
-```
-{% for accomplishment in site.accomplishments %}
-
-{% endfor %}
-```
 
 Inside the inner for loop, we do a logic check to determine whether the bullet should be "published" in this version of the smart resume. If it is the first accomplishment belonging to the employer, we print both employer and accomplishment, then flip the "first accomplishment" variable to "false."
 
-```
-{% if accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == true %}
 
-{{ employer.content }}
-
-<ul>
-
-<li>{{ accomplishment.content }}</li>
-
-{% assign first_accomplishment = false %}
-
-```
 If it's not the first bullet, we just print the accomplishment.
 
-{% elsif accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == false %}
-
-<li>{{ accomplishment.content }}</li>
-
-{% assign first_accomplishment = false %}
-
 Now we put it together and try a test run.  We see that the program is successfully looping over a list of my accomplishments and reporting only those that seem to pertain to "developer relations":
+
+![image-title-here](/assets/images/devrel_resume.png)
 
 [Fred's developer relations resume](resumes/developer_relations_resume.html)
 

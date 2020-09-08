@@ -1,0 +1,18 @@
+---
+layout: default
+title: Content
+---
+<h1>Content</h1>
+
+
+
+
+<ul>
+  {% for content in site.content %}
+    <li>
+      <h2><a href="{{ content.url | relative_url }}">{{ content.title }}</a></h2>
+
+
+    </li>
+  {% endfor %}
+</ul>

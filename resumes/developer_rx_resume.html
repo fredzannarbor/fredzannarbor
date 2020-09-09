@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resumes by Goal
+title: Developer Relations Goal
 ---
 <p><strong>Goal: a position as a developer relations advocate</strong></p>
 
@@ -10,7 +10,7 @@ title: Resumes by Goal
 
 {% for accomplishment in site.accomplishments %}
 
-{% if accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == true %}
+{% if accomplishment.resume_goal == "developer_rx" and employer.title == accomplishment.employer and first_accomplishment == true %}
 
 {{ employer.content }}
 
@@ -20,7 +20,7 @@ title: Resumes by Goal
 
 {% assign first_accomplishment = false %}
 
-{% elsif accomplishment.resume_goal == "developer_relations" and employer.title == accomplishment.employer and first_accomplishment == false %}
+{% elsif accomplishment.resume_goal == "developer_rx" and employer.title == accomplishment.employer and first_accomplishment == false %}
 
 <li>{{ accomplishment.content }}</li>
 

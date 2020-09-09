@@ -1,4 +1,8 @@
-# Writing a Smart Multipurpose Resume with Jekyll Collections (part 1 of n)
+---
+title: Smart Resumes with Jekyll
+---
+
+# Building a Multipurpose Resume with Jekyll Collections (part 1 of n)
 
 Do you struggle with figuring out how best to summarize your diverse (and, perhaps, lengthy...) experience into a handful or two of machine-learning-friendly bullet points?
 Are you applying to several different types of jobs, perhaps seeking to make a career change?
@@ -9,18 +13,15 @@ Jekyll is a popular free command-line program for Windows, Linux, or Mac that ge
 
 ## Using Jekyll Collections
 
-Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.
+Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.  [The core Jekyll documentation for Collections](https://jekyllrb.com/docs/collections/), which is quite good and includes [a step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/09-collections/).
 
-As I figured out how to achieve my goals, I leaned heavily on [the core Jekyll documentation for Collections](https://jekyllrb.com/docs/collections/), which is is quite good and includes [a step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/09-collections/).
-
-My concept requires that I add two Collections to my site's default: Accomplishments and Employers. Then I will use Jekyll's Liquid template language to filter bullets in and out depending on situation.
+To build a multipurpose "smart" resume, I will add two Collections to my local Jekyll website: Accomplishments and Employers. Then I will use Jekyll's Liquid template language to filter bullets in and out depending on situation.
 
 The procedure is as follows.
 
-1.  Create directories _accomplishments and _employers in your Jekyll site root.  The underscores are required in the directory names.
+Create directories _accomplishments and _employers in the Jekyll site root.  The underscores are required in the directory names.
 
-2.  Modify _config.yml by inserting the following anywhere:
-
+Modify _config.yml by inserting the following anywhere:
 ```
 accomplishments:
   output: true
@@ -31,35 +32,36 @@ employers:
   permalink: /:collection/:name
 
 ```
-
-
 This makes Jekyll aware of the collections.
 
-3.  Each document in _accomplishments describes one of your noteworthy accomplishments. You should use the [now-standard X-Y-Z form](https://www.inc.com/bill-murphy-jr/google-recruiters-say-these-5-resume-tips-including-x-y-z-formula-will-improve-your-odds-of-getting-hired-at-google.html) of "Accomplished [X] as measured by [Y], by doing [Z]."
+Each document in _accomplishments describes one of your noteworthy accomplishments. You should use the [now-standard X-Y-Z form](https://www.inc.com/bill-murphy-jr/google-recruiters-say-these-5-resume-tips-including-x-y-z-formula-will-improve-your-odds-of-getting-hired-at-google.html) of "Accomplished [X] as measured by [Y], by doing [Z]."
 
-Here is an example of an accomplishment in one of my recent positions.  I called this document "software-review.md".
-
+Here is an example of an accomplishment.  I called this document "software-review.md".
 ```
 ---
 resume_goal: product_mgr
 keywords: strategy, money
-employer: Cengage Learning
+employer: Acme Widgets
 ---
-Reduced company spending by approximately $300,000 (25%) and reduced business risk to my product by review of company-wide utilization of key software dependency that resulted in renegotiated contract with better terms.
+Reduced company spending by approximately $700,000 (25%) and reduced business risk to my product by review of company-wide utilization of key software dependency that resulted in renegotiated contract with better terms.
 
 ```
-4.  Each document in _employers describes one of your past employers.  Here is the document for my most recent employer:
+Each document in _employers describes one of your past employers.  Here is the document for a prev employer:
 
 ```
 ---
 layout: default
-title: Cengage Learning
-from_date: May 2017
-to_date: August 2019
+employer: Acme Widgets
+from_date: 20170501
+to_date: 20200318
 ---
-Product Manager II, Cengage Learning May 2017 - October 2019
+Product Manager, Acme Widgets, May 2017 - March 2020
 ```
-5.  Note that we need to have a match field that enables us to match accomplishments with the employers that own them.  In employers the field is called "title" and in _accomplishments it is "employer".  
+We know we will need to have a match field that enables us to match accomplishments with the employers that own them, so both "accomplishments" and "employers" have a field called "employer". Be sure to be consistent in spelling the values of employer in both collections!
+
+We also know that we're likely going to want to sort employers chronologically, so we include simple from/to date fields.
+
+You should be sparing in creating these "front matter" key/value pairs: just the bare minimum of metadata that you will need for template logic.  Unstructured content follows the second set of dashes.
 
 ## Using Liquid templating language
 
@@ -67,36 +69,43 @@ Now we create the "smart" part of the "smart resume."  We need some logic to pic
 
 To create a resume that emphasizes accomplishments relative to our goal, we are going to loop over the collection of employers, then look at each accomplishment belonging to that employer and determine whether it is relevant to our goal.  We accomplish this with nested for loops.
 
-We are going to start by creating a resume that is geared towards a potential career change to developer relations.  The page will be called developer_resume_relations.html and stored in the Jekyll root.  It will have some Jekyll "front matter" protected by triple scores and including a goal statement at the beginning.
+We are going to start by creating a resume for our hypothetical product manager who is considering a potential career change to developer relations.  We will go through her accomplishments and pull out the ones that are relevant to this goal.  The value of "resume_goal" in the front matter for relevant accomplishments will be "developer_rx". The page will be called developer_resume_relations.html and stored in the Jekyll root.  It will have some Jekyll "front matter" protected by triple scores and including a goal statement at the beginning.
 
 ```
 ---
 layout: default
-title: Resumes by Goal
+title: Developer Relations Goal
 ---
-<p><strong>Goal: a position as a developer relations advocate</strong></p>
-
+Goal: a position as a developer relations advocate
 ```
-Then the page will proceed through its logic.  First, we initialize a variable to keep track of whether a bullet is the first one per employer.
+Then the page will proceed through its logic.  
 
-Then, the  outer for loop iterates over our site's collection of employers.
+First, we initialize a variable to keep track of whether a bullet is the first one per employer.
+![](/assets/images/Screen Shot 2020-09-08 at 9.43.44 PM.png)
 
+Then, an outer for loop iterates over our the documents found in the site's _employers directory.
 
-An inner for loop iterates over the accomplishments.
+![](/assets/images/Screen Shot 2020-09-08 at 9.40.22 PM.png)
 
+Then an inner for loop iterates over the accomplishments.
+
+![](/assets/images/Screen Shot 2020-09-08 at 9.40.33 PM.png)
 
 Inside the inner for loop, we do a logic check to determine whether the bullet should be "published" in this version of the smart resume. If it is the first accomplishment belonging to the employer, we print both employer and accomplishment, then flip the "first accomplishment" variable to "false."
 
+![](/assets/images/Screen Shot 2020-09-08 at 9.40.40 PM.png)
 
-If it's not the first bullet, we just print the accomplishment.
+If the logic check says that the accomplishment is related to the goal but it's not the first accomplishment for that employer, we just print the accomplishment.  And if the accomplishment is not related to the goal at all, we just skip to the next iteration of the for loop.
 
-Now we put it together and try a test run.  We see that the program is successfully looping over a list of my accomplishments and reporting only those that seem to pertain to "developer relations":
+![](/assets/images/Screen Shot 2020-09-08 at 9.40.59 PM.png)
 
-![image-title-here](/assets/images/devrel_resume.png)
+Now let's put this together in a [gist](https://gist.github.com/fredzannarbor/53e765296504ffaf8c7ca7a32ffd8467) and try a test run.  
 
-[Fred's developer relations resume](resumes/developer_relations_resume.html)
+We see that the program is successfully looping over a short list of accomplishments and seems to be reporting only those that pertain to "developer relations":
 
-Here is the entire code so far:
+![Demo image](/assets/images/Screen Shot 2020-09-08 at 11.13.43 PM.png)
 
-In the next installment, we will tweak a few things like the sort order and add an Education block.
+[Developer relations resume](/resumes/developer_rx_resume.html)
+
+In the next installment, we will add some accomplishments and employers, tweak the sort order, and add an Education block.
 

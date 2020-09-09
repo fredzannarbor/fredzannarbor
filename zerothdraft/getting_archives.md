@@ -2,6 +2,11 @@
 title: Getting Your Full Social Media Archives
 ---
 
+- [Facebook](#facebook)
+- [Twitter](#twitter)
+- [LinkedIn](#linkedin)
+- [Participating in the Alpha Test](#participating-in-the-alpha-test)
+
 Most large social media providers have set up "data liberation" procedures that you can use to retrieve your entire history, but they are typically hidden fairly deep in settings.
 
 ## Facebook 

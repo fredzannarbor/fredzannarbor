@@ -45,3 +45,7 @@ Click the Data Privacy on the left rail.
 Under the How LinkedIn uses your data section, click Get a copy of your data.
 Select the data that you’re looking for and Request archive.
 ```
+
+## Participating in the Alpha Test
+
+Send email to fredzimmerman at gmail doht com.

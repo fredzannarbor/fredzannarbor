@@ -13,7 +13,7 @@ Jekyll is a popular free command-line program for Windows, Linux, or Mac that ge
 
 ## Using Jekyll Collections
 
-Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.  [The core Jekyll documentation for Collections](https://jekyllrb.com/docs/collections/), which is quite good and includes [a step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/09-collections/).
+Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.  [The core Jekyll documentation for Collections](https://jekyllrb.com/docs/collections/) is quite good and includes [a step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/09-collections/).
 
 To build a multipurpose "smart" resume, I will add two Collections to my local Jekyll website: Accomplishments and Employers. Then I will use Jekyll's Liquid template language to filter bullets in and out depending on situation.
 

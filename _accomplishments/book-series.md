@@ -4,4 +4,4 @@ resume_goal: product_mgr
 keywords: publishing
 employer: Nimble Books LLC
 ---
-Defined and delivered successful multi-book product lines in multiple genres including popular culture, international politics, naval history, military history, religion, law, and strategy using experimental formats and technologies.
+Created successful multi-book product lines using experimental publishing formats and technologies for genres including popular culture, international politics, naval history, military history, religion, law, and strategy.

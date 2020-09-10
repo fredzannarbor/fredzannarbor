@@ -1,7 +1,7 @@
 ---
 layout: default
-title: AltBrains Workshop
+title: AltBrains Workshop LLC
 from_date: 20190315
-to_date: 20200930
+to_date: 20201001
 ---
 Founder, AltBrains Workshop, March 2019 - now

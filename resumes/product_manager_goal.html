@@ -3,13 +3,17 @@ layout: default
 title: Senior Product Manager
 ---
 
-<strong>Related Employment</strong> 
+
+<strong>Product Management: Related Employment</strong>
+
+{% assign targetjob = "product_mgr" %}
 
 (<a href="cv-full.html">full CV</a>)
+
+<p></p>
 {% assign first_accomplishment = true %}
 
-{% assign employersbydate = site.employers | reverse %}
-
+{% assign employersbydate = site.employers | sort: "to_date" | reverse %}
 
 {% for employer in employersbydate %}
 
@@ -17,9 +21,7 @@ title: Senior Product Manager
 
 {% for goal in accomplishment.resume_goal %}
 
-
-
-{% if goal == "product_mgr" and employer.title == accomplishment.employer and first_accomplishment == true %}
+{% if goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == true %}
 
 {{ employer.content }}
 
@@ -31,7 +33,7 @@ title: Senior Product Manager
   {% assign first_accomplishment = false %}
 
 
-  {% elsif goal == "product_mgr" and employer.title == accomplishment.employer and first_accomplishment == false %}
+  {% elsif goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == false %}
 
   <li>{{ accomplishment.content }}</li>
 

@@ -1,0 +1,13 @@
+---
+title: Senior Product Manager
+---
+
+{% assign first_accomplishment = true %}
+
+{% assign employersbydate = site.employers | sort: "to_date" | reverse %}
+
+{% for employer in employersbydate %}
+
+{{ employer.content }}
+
+{% endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: AltBrains Workshop
-to_date: March 2019
+from_date: 20190315
+to_date: now
 ---
-Founder, AltBrains Workshop, March 2019 - present
+Founder, AltBrains Workshop, March 2019 - now

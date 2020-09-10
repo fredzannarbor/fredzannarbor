@@ -1,7 +1,7 @@
 ---
 job_title:  publisher
-resume_goal: voice_pm
+resume_goal: [ "voice_pm", "product_mgr" ]
 keywords: software, Python, developer, Alexa
 employer: Nimble Books LLC
 ---
-Wrote customizable Alexa skill for book publishing industry, enabling small and medium imprints to deploy advanced voice marketing tools at a fraction of the cost of engaging a programmer.
+Wrote customizable Alexa skill enabling medium-sized publisher to offer voice briefings including selected author tweets, book excerpts and publisher news.

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Senior Product Manager
+---
+
+<strong>Employment</strong>
+{% assign first_accomplishment = true %}
+
+{% assign employersbydate = site.employers | sort: "from_date" | reverse %}
+
+{% for employer in employersbydate | sort: "from_date" %}
+
+{% for accomplishment in site.accomplishments %}
+
+{% if accomplishment.resume_goal contains "product_mgr" and employer.title == accomplishment.employer and first_accomplishment == true %}
+
+{{ employer.content }}
+
+<ul>
+
+  <li>{{ accomplishment.content }}</li>
+
+  {% assign first_accomplishment = false %}
+
+  {% elsif accomplishment.resume_goal contains "product_mgr" and employer.title == accomplishment.employer and first_accomplishment == false %}
+
+  <li>{{ accomplishment.content }}</li>
+
+  {% assign first_accomplishment = false %}
+
+  {% else %}
+
+  {% endif %}
+
+  {% endfor %}
+</ul>
+
+{% assign first_accomplishment = true %}
+
+{% endfor %}
+
+{% include education.html %}
+

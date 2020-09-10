@@ -1,5 +1,5 @@
 ---
-title: Smart Resumes with Jekyll
+title: Smart Resumes with Jekyll 1 of 2
 ---
 
 # Building a Multipurpose Resume with Jekyll Collections (part 1 of n)

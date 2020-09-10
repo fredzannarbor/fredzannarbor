@@ -24,6 +24,7 @@ collections:
   employers:
     output: true
     permalink: /:collection/:name
+    sort_by: from_date 
 
   content:
     output: true 

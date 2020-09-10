@@ -3,14 +3,6 @@ title: Home Page
 layout: default
 ---
 
-
-mobile: +1.734-545-5369 | fredzannarbor at gmail doht com | Ann Arbor, Michigan, USA
-
-## My Companies
-
-- [Nimble Books LLC](nimble/about_nimble.html)
-- AltBrains Workshop LLC
-
 ## Posts
 
 <ul>
@@ -25,3 +17,16 @@ mobile: +1.734-545-5369 | fredzannarbor at gmail doht com | Ann Arbor, Michigan,
 
 - [Nimble Books in Print ({{ site.books_in_print.size }}) ](books.html) 
 - [AltBrains ({{ site.altbrains.size }})](altbrains.html) topic trackers
+
+## About Me
+
+### My Companies
+
+- [Nimble Books LLC](nimble/about_nimble.html)
+- AltBrains Workshop LLC
+
+### Resumes
+- [Resume](resumes/product_manager_goal.html) / [full CV](resumes/cv-full.html)
+
+### Coordinates
+- {% include coordinates.html %}

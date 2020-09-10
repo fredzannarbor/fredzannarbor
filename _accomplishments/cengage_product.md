@@ -6,4 +6,4 @@ resume_goal: product_mgr
 keywords: reliability, process
 employer: Cengage
 ---
-Improved availability of product from "one 9" to "three 9s" by emphasizing quality and accuracy, introducing measurement and analytics, and implementing agile practices such as prioritizing JIRA backlog, protecting developers from interruption, and utilizing retrospective reviews.
+Improved availability of product from "one 9" to "three 9s" by emphasizing quality and accuracy, introducing measurement and analytics, securing additional resources, and implementing agile practices such as prioritizing JIRA backlog, protecting developers from interruption, and utilizing retrospective reviews.

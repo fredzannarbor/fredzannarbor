@@ -1,6 +1,6 @@
 ---
 job_title:  Manager, Design & Usability
-resume_goal: [ UX ]
+resume_goal: "UX"
 keywords: law, search, UX
 employer: LexisNexis
 ---

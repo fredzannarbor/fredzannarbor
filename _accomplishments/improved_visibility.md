@@ -1,6 +1,6 @@
 ---
 job_title: independent developer
-resume_goal: developer_relations
+resume_goal: developer_rx
 keywords: software, Python, developer, web, 21.co
 employer: PageKicker
 ---

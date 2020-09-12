@@ -1,5 +1,5 @@
 ---
-resume_goal: developer_relations
+resume_goal: developer_rx
 keywords: software, Alteryx, data
 employer: Cengage
 ---

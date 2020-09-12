@@ -1,6 +1,6 @@
 ---
 job_title: independent developer
-resume_goal: developer_rx
+resume_goal: developer_test
 keywords: software, Python, developer, web, Acme Widget
 employer: Acme Widgets
 ---

@@ -1,6 +1,6 @@
 ---
-resume_goal: developer_relations
+resume_goal: developer_rx
 keywords: software, Javascript
-employer: AltBrains Workshop
+employer: AltBrains Workshop LLC
 ---
 Stimulated growth of Samsung Bixby community by being [top third-party answerer/asker for Bixby category](https://stackoverflow.com/tags/bixby/topusers) on StackOverflow. 

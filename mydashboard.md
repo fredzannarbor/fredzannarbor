@@ -27,7 +27,6 @@ Name| Resource | Status
 {% endfor %}
 
 
-
 ## Nimble Books
 
 

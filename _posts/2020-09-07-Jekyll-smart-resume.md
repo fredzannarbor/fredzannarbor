@@ -1,17 +1,16 @@
 ---
-title: Smart Resumes with Jekyll 1 of 2
+title: Smart Resumes with Jekyll 
 ---
 
-# Building a Multipurpose Resume with Jekyll Collections (part 1 of n)
-
+# Building a Multipurpose Resume Hosted on GitHub Pages
 Do you struggle with figuring out how best to summarize your diverse (and, perhaps, lengthy...) experience into a handful or two of machine-learning-friendly bullet points?
 Are you applying to several different types of jobs, perhaps seeking to make a career change?
 Are you an inveterate tinkerer who likes to play around with technology?
 If so, consider using Jekyll Collections to make a "Smart" Multipurpose Resume.
 
-Jekyll is a popular free command-line program for Windows, Linux, or Mac that generates static web pages from your plain text or markdown documents. Crucially, it is used by GitHub's Pages platform, which provides an option for free web hosting; or you can upload the pages to your own server.
+Jekyll is a popular free command-line program for Windows, Linux, or Mac that generates static web pages from your plain text or markdown documents. Crucially, it is used by [GitHub's Pages platform](https://pages.github.com), which provides an option for free web hosting; or you can upload the pages to your own server.
 
-## Using Jekyll Collections
+# Jekyll Collections
 
 Jekyll includes a neat concept called "Collections" of related documents.  In this example, I show how to use Jekyll Collections to create different views of your experience through whatever prism is most important at the moment.  [The core Jekyll documentation for Collections](https://jekyllrb.com/docs/collections/) is quite good and includes [a step-by-step tutorial](https://jekyllrb.com/docs/step-by-step/09-collections/).
 
@@ -63,7 +62,7 @@ We also know that we're likely going to want to sort employers chronologically, 
 
 You should be sparing in creating these "front matter" key/value pairs: just the bare minimum of metadata that you will need for template logic.  Unstructured content follows the second set of dashes.
 
-## Using Liquid templating language
+# The Liquid templating language
 
 Now we create the "smart" part of the "smart resume."  We need some logic to pick out only the accomplishments that are relevant to the goal of the resume.  Jekyll uses the Liquid templating language which can do simple conditional logic and control operations inside HTML pages. 
 
@@ -80,32 +79,100 @@ Goal: a position as a developer relations advocate
 ```
 Then the page will proceed through its logic.  
 
-First, we initialize a variable to keep track of whether a bullet is the first one per employer.
-![](/assets/images/Screen Shot 2020-09-08 at 9.43.44 PM.png)
+We'll use a Jekyll include at the top to provide our coordinates.
 
-Then, an outer for loop iterates over our the documents found in the site's _employers directory.
+{% raw %}
+`{% include coordinates.html %}`
+{% endraw %}
 
-![](/assets/images/Screen Shot 2020-09-08 at 9.40.22 PM.png)
+Then we'll create a variable to allow us to re-use this template for other goals.
 
-Then an inner for loop iterates over the accomplishments.
+{% raw %}
+`{% assign targetjob = "developer_rx" %}`
+{% endraw %}
 
-![](/assets/images/Screen Shot 2020-09-08 at 9.40.33 PM.png)
+And we initialize a variable to keep track of whether a bullet is the first one per employer.
 
-Inside the inner for loop, we do a logic check to determine whether the bullet should be "published" in this version of the smart resume. If it is the first accomplishment belonging to the employer, we print both employer and accomplishment, then flip the "first accomplishment" variable to "false."
+{% raw %}
+`{% assign first_accomplishment = true %}`
+{% endraw %}
 
-![](/assets/images/Screen Shot 2020-09-08 at 9.40.40 PM.png)
+We want our list of employers arranged in reverse chronological order, so we create a new array.
+
+{% raw %}
+`{% assign employersbydate = site.employers | sort: "to_date" | reverse %}`
+{% endraw %}
+
+Then the outermost for loop iterates over the list of employers.
+
+{% raw %}
+`{% for employer in employersbydate %}`
+{% endraw %}
+
+The next for loop iterates over the accomplishments.
+{% raw %}
+`{% for accomplishment in site.accomplishments %}`
+{% endraw %}
+
+And, since each accomplishment can pertain to multiple resume goals, we have to loop over them, too.
+{% raw %}
+`{% for goal in accomplishment.resume_goal %}`
+{% endraw %}
+
+Now we do a logic check to determine whether each accomplishment should be "published" in this version of the smart resume. If it is the first accomplishment belonging to the employer, we print the main body (.content) for both employer and accomplishment in bulletized form, then flip the "first accomplishment" variable to "false."
+
+{% raw %}
+```
+{% if goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == true %}
+
+{{ employer.content }}
+
+<ul>
+
+    <li>{{ accomplishment.content }}</li>
+
+
+    {% assign first_accomplishment = false %}
+```{% endraw %}
 
 If the logic check says that the accomplishment is related to the goal but it's not the first accomplishment for that employer, we just print the accomplishment.  And if the accomplishment is not related to the goal at all, we just skip to the next iteration of the for loop.
 
-![](/assets/images/Screen Shot 2020-09-08 at 9.40.59 PM.png)
+{% raw %}
+```
+{% elsif goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == false %}
 
-Now let's put this together in a [gist](https://gist.github.com/fredzannarbor/53e765296504ffaf8c7ca7a32ffd8467) and try a test run.  
+    <li>{{ accomplishment.content }}</li>
 
-We see that the program is successfully looping over a short list of accomplishments and seems to be reporting only those that pertain to "developer relations":
+    {% assign first_accomplishment = false %}
 
-![Demo image](/assets/images/Screen Shot 2020-09-08 at 11.13.43 PM.png)
+    {% else %}
 
-[Developer relations resume](/resumes/developer_rx_resume.html)
+    {% endif %}
+```{% endraw %}
 
-In the next installment, we will add some accomplishments and employers, tweak the sort order, and add an Education block.
+Then we close each of the for loops in turn.
+{% raw %}
+```
+    {% endfor %}
+
+    {% endfor %}
+</ul>
+
+{% assign first_accomplishment = true %}
+
+{% endfor %}
+```{% endraw %}
+
+And add the Education section.
+{% raw %}
+`{% include education.html %}`
+{% endraw %}
+
+Now let's put this [all together](https://gist.github.com/fredzannarbor/53e765296504ffaf8c7ca7a32ffd8467) and try a test run.  
+
+Magically, we see a resume that contains a list of all [my accomplishments pertaining to developer relations](/resumes/developer_rx_resume.html), sorted in reverse chronological order by employer.
+
+# Further Information
+
+The html pages containing the liquid togic and a few sample collection documents in markdown are [available on GitHub.]( https://github.com/fredzannarbor/smart-resumes-with-jekyll)
 

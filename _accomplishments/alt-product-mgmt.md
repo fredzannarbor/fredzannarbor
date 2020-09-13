@@ -1,7 +1,7 @@
 ---
 job_title: founder
-resume_goal: [ "product_mgr", "voice_pm" ]
+resume_goal: [ "product_mgr", "voice_pm", "developer_rx" ]
 keywords: product, voice
 employer: AltBrains Workshop LLC
 ---
-Defined & built multimodal voice publishing system for content owners.
+As Samsung Bixby Premier Developer, defined & built multimodal voice publishing system for content owners.

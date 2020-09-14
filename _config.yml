@@ -5,6 +5,9 @@ twitter_username: fredzannarbor
 github_username:  fredzannarbor
 linkedin_username: wfzimmerman
 
+plugins:
+  - jekyll-sitemap
+
 theme: minima
 title: Fred Zimmerman's Website
 

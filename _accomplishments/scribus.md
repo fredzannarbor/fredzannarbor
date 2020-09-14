@@ -1,6 +1,6 @@
 ---
 job_title:  publisher
-resume_goal: Python_developer
+resume_goal: "developer"
 keywords: software, Python, developer, Scribus
 employer: Nimble Books
 ---

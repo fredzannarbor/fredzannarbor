@@ -1,39 +1,54 @@
 ---
 layout: default
-title: Product Management -- Voice
+title: Voice/Multimodal AI Product Manager
 ---
-<p><strong>Seasoned product manager, voice developer and scientist wants to lead diverse teams to tackle big challenges in voice.</strong></p>
 
+{% include coordinates.html %}<p></p>
+
+<p><strong>Seasoned product manager, voice developer and scientist looking to lead diverse teams to tackle big challenges.</strong> (<a href="cv-full.html">full CV</a>)</p>
+
+{% assign targetjob = "voice_pm" %}
+
+<p></p>
 {% assign first_accomplishment = true %}
 
-{% for employer in site.employers %}
+{% assign employersbydate = site.employers | sort: "to_date" | reverse %}
+
+{% for employer in employersbydate %}
 
 {% for accomplishment in site.accomplishments %}
 
+{% for goal in accomplishment.resume_goal %}
 
-{% if employer.title == accomplishment.employer and first_accomplishment == true and accomplishment.resume_goal contains "voice_pm" %}
+{% if goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == true %}
 
 {{ employer.content }}
 
 <ul>
 
-<li>{{ accomplishment.content }}</li>
+    <li>{{ accomplishment.content }}</li>
 
-{% assign first_accomplishment = false %}
 
-{% elsif accomplishment.resume_goal contains "voice_pm" and employer.title == accomplishment.employer and first_accomplishment == false %}
+    {% assign first_accomplishment = false %}
 
-<li>{{ accomplishment.content }}</li>
 
-{% assign first_accomplishment = false %}
+    {% elsif goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == false %}
 
-{% else %}
+    <li>{{ accomplishment.content }}</li>
 
-{% endif %}
+    {% assign first_accomplishment = false %}
 
-{% endfor %}
+    {% else %}
+
+    {% endif %}
+
+    {% endfor %}
+
+    {% endfor %}
 </ul>
 
 {% assign first_accomplishment = true %}
 
 {% endfor %}
+
+{% include education.html %}

@@ -2,7 +2,7 @@
 job_title: Product Manager, Cengage Learning
 from_date: May 2017
 to_date: August 2019
-resume_goal: product_mgr
+resume_goal: [ "product_mgr", "voice_pm" ]
 keywords: reliability, process
 employer: Cengage
 ---

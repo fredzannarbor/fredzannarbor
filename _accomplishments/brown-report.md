@@ -1,6 +1,6 @@
 ---
 job_title:  Research Scientist
-resume_goal: "science"
+resume_goal: [ "science", "voice_pm" ]
 keywords: science, intelligence
 employer: ISciences LLC
 ---

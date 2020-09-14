@@ -32,11 +32,12 @@ layout: default
 - [Nimble Books LLC](nimble/about_nimble.html)
 - AltBrains Workshop LLC
 
-### Resumes
+### My Resumes
 - [for product management](resumes/product_manager_goal.html)
 - [for product management emphasizing voice, AI, & science](resumes/voice_product_management_resume.html)
 - [for developer relations](resumes/developer_rx_resume.html)
 - [full CV](resumes/cv-full.html) (all positions, all publications)
+- [how to create smart resumes in Jekyll](_posts/2020-09-07-Jekyll-smart-resume.md)
 
-### Coordinates
+### My Coordinates
 - {% include coordinates.html %}

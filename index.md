@@ -33,7 +33,10 @@ layout: default
 - AltBrains Workshop LLC
 
 ### Resumes
-- [Resume](resumes/product_manager_goal.html) / [full CV](resumes/cv-full.html)
+- [for product management](resumes/product_manager_goal.html)
+- [for product management emphasizing voice, AI, & science](resumes/voice_product_management_resume.html)
+- [for developer relations](resumes/developer_rx_resume.html)
+- [full CV](resumes/cv-full.html) (all positions, all publications)
 
 ### Coordinates
 - {% include coordinates.html %}

@@ -28,7 +28,6 @@ layout: default
 ## About Me
 
 ### My Companies
-
 - [Nimble Books LLC](nimble/about_nimble.html)
 - AltBrains Workshop LLC
 

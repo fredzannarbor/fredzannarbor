@@ -3,6 +3,14 @@ title: Home Page
 layout: default
 ---
 
+- [Algorithmic Publishing Systems](#algorithmic-publishing-systems)
+- [Posts](#posts)
+- [Pages](#pages)
+- [About Me](#about-me)
+  - [My Companies](#my-companies)
+  - [My Resumes](#my-resumes)
+  - [My Coordinates](#my-coordinates)
+
 ## Algorithmic Publishing Systems
 
 1.  ZerothDraft takes your social media archives, analyzes and clusters them  into chapters, and creates a book draft that you can publish via my company, Nimble Books, or others.  [Get started now.](zerothdraft/getting_archives.html)

@@ -1,6 +1,6 @@
 ---
 job_title:  Product Manager
-resume_goal: [ "product_mgr", "voice_pm" ]
+resume_goal: [ "product_mgr", "voice_pm", "KDP_team" ]
 keywords: law, search
 employer: LexisNexis
 ---

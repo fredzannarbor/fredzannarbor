@@ -1,0 +1,57 @@
+---
+layout: default
+title: Senior Product Manager
+---
+
+{% include coordinates.html %}<p></p>
+
+<strong>Product Management: E-book Focus</strong>
+
+{% assign targetjob = "KDP_team" %}
+
+(<a href="cv-full.html">full CV</a>)
+
+<p></p>
+{% assign first_accomplishment = true %}
+
+{% assign employersbydate = site.employers | sort: "to_date" | reverse %}
+
+{% for employer in employersbydate %}
+
+{% for accomplishment in site.accomplishments %}
+
+{% for goal in accomplishment.resume_goal %}
+
+{% if goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == true %}
+
+{{ employer.content }}
+
+<ul>
+
+  <li>{{ accomplishment.content }}</li>
+
+
+  {% assign first_accomplishment = false %}
+
+
+  {% elsif goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == false %}
+
+  <li>{{ accomplishment.content }}</li>
+
+  {% assign first_accomplishment = false %}
+
+  {% else %}
+
+  {% endif %}
+  
+  {% endfor %}
+  
+  {% endfor %}
+</ul>
+
+{% assign first_accomplishment = true %}
+
+{% endfor %}
+
+{% include education.html %}
+

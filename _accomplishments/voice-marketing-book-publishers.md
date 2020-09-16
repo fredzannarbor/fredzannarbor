@@ -1,6 +1,6 @@
 ---
 job_title:  publisher
-resume_goal: [ "voice_pm", "product_mgr" ]
+resume_goal: [ "voice_pm", "product_mgr", "KDP_team" ]
 keywords: software, Python, developer, Alexa
 employer: Nimble Books LLC
 ---

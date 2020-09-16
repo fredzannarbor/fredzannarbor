@@ -1,6 +1,6 @@
 ---
 job_title:  publisher
-resume_goal: product_mgr
+resume_goal: [ "product_mgr", "KDP_team" ]
 keywords: publishing
 employer: Nimble Books LLC
 ---

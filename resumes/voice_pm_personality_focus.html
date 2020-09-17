@@ -1,0 +1,54 @@
+---
+layout: default
+title: Voice/Multimodal AI Personality Product Manager
+---
+
+{% include coordinates.html %}<p></p>
+
+<p><strong>Notoriously creative product manager, voice developer and scientist who has built personality-driven writing robots.</strong> (<a href="cv-full.html">full CV</a>)</p>
+
+{% assign targetjob = "voice_pm" %}
+
+<p></p>
+{% assign first_accomplishment = true %}
+
+{% assign employersbydate = site.employers | sort: "to_date" | reverse %}
+
+{% for employer in employersbydate %}
+
+{% for accomplishment in site.accomplishments %}
+
+{% for goal in accomplishment.resume_goal %}
+
+{% if goal == targetjob  and employer.title == accomplishment.employer and first_accomplishment == true %}
+
+{{ employer.content }}
+
+<ul>
+
+    <li>{{ accomplishment.content }}</li>
+
+
+    {% assign first_accomplishment = false %}
+
+
+    {% elsif goal == targetjob and employer.title == accomplishment.employer and first_accomplishment == false %}
+
+    <li>{{ accomplishment.content }}</li>
+
+    {% assign first_accomplishment = false %}
+
+    {% else %}
+
+    {% endif %}
+
+    {% endfor %}
+
+    {% endfor %}
+</ul>
+
+{% assign first_accomplishment = true %}
+
+{% endfor %}
+
+{% include education.html %}

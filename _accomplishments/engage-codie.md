@@ -1,5 +1,5 @@
 ---
-resume_goal: [ "product_mgr", "voice_pm" ]
+resume_goal: [ "product_mgr", "voice_pm", "KDP_team" ]
 keywords: software, Alteryx, data
 employer: Cengage
 ---

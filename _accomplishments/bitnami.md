@@ -1,6 +1,6 @@
 ---
 job_title: Publisher
-resume_goal: developer_rx
+resume_goal: [ "developer_rx" ]
 keywords: software, bash, developer, web, Apache
 employer: Nimble Books LLC
 ---

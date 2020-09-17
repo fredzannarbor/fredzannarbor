@@ -41,7 +41,7 @@ layout: default
 
 ### My Resumes
 - [for product management](resumes/product_manager_goal.html); [emphasizing voice, AI, & science](resumes/voice_product_management_resume.html); [emphasizing e-books](resumes/KDP_team_goal.html)
-- [for developer relations](resumes/developer_rx_resume.html)
+- for positions as a [developer](resumes/developer.html) and [developer relations](resumes/developer_rx_resume.html)
 - [full CV](resumes/cv-full.html) (all positions, all publications)
 - [how to create smart resumes in Jekyll](_posts/2020-09-07-Jekyll-smart-resume.md)
 

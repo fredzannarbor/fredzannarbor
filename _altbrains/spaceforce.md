@@ -1,6 +1,5 @@
 ---
 title: "Space Force"
-identifier: "spaceforce"
 icon_image: "https://www.altbrains.com/images/altbrains/united_states_space_force_logo.jpg"
 twitter_search_string: "from:spaceForceDoD"
 ---

@@ -1,6 +1,5 @@
 ---
 title: "Knewz"
-identifier: "knewz"
 icon_image: "https://bixby-1d34.restdb.io/media/5e33a15aa7fd1c4c0001f225"
 twitter_search_string: "from:knowknewz"
 ---

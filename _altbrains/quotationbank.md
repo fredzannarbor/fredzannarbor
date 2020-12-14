@@ -1,8 +1,6 @@
 ---
 title: "Quotation Bank"
-identifier: "quotationbank"
 icon_image: "https://www.altbrains.com/images/altbrains/Q.jpg"
-twitter_search_string: ""
 ---
 Quotations inspire, provoke, and amuse.  Quotations give us perspective, and remind us of our values.  Quotations expand our world and find us our heroes. Quotations rock!  
 

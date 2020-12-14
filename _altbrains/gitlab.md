@@ -1,6 +1,5 @@
 ---
 title: "Remote Work Guide for Employers"
-identifier: "gitlab"
 icon_image: "https://bixby-1d34.restdb.io/media/5e6ab14f98d98e0c00002b16"
 twitter_search_string: "from:gitlab"
 ---

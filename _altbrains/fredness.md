@@ -1,6 +1,5 @@
 ---
 title: "Fredness"
-identifier: "fredness"
 icon_image: "https://bixby-1d34.restdb.io/media/5ea1ffdf98d98e0c0007db00"
 twitter_search_string: "from:fredzannarbor"
 ---

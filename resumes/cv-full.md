@@ -1,16 +1,12 @@
 # Curriculum Vitae
-
-## Publications & Deliverables
-
-Chishti, Shaheen.  The Granddaughter Project. A novel of women's empowerment. Nimble Books: June 2021.
+- [Curriculum Vitae](#curriculum-vitae)
+    - [Products & Major Work Deliverables](#products--major-work-deliverables)
+    - [Published as Nimble Books (reverse chron)](#published-as-nimble-books-reverse-chron)
+    - [Employment](#employment)
+  
+### Products & Major Work Deliverables
 
 Nimble AI.  Text generation, analytics, and data exploration tools for authors, publishers, and readers. https://nimblebooks.com:5002.  March 2021.
-
-Escobar, Pepe. Raging Twenties: Great Power Politics Meets Techno-Feudalism in the Era of COVID-19. Nimble Books: February 2021.
-
-Zimmerman, Frederick.  Eccentric Dictionaries: An Experiment in AI-Enhanced Human Creativity. Nimble Books: January 2021.
-
-Andruss, Sr., Frank J. Pieces of History: Artifacts of the PT Boat Navy.  Nimble Books: December 2020.
 
 Iran Conflict Tracker capsule for Samsung Bixby multimodal natural-language AI-powered personal assistant. Conversational interaction provides low-agita, low-compulsiveness approach to maintaining current awareness. January 2020.
 
@@ -22,7 +18,7 @@ Inside the Helmet.  News and images about The Mandalorian. Samsung Bixby Capsule
 
 Historical CO2  emissions lookup. Samsung Bixby capsule.  November 2019.
 
- Gale Engage.  Patron engagement management system for public libraries.  http://www.gale.com/engage. Gale Group: November 12, 2019. (launch).  
+Gale Engage.  Patron engagement management system for public libraries.  http://www.gale.com/engage. Gale Group: November 12, 2019. (launch).  
 
 Last Shot. #VoiceFirst game for Amazon Alexa.  https://amzn.to/2CVVCMM.  AltBrains Workshop: April 4, 2019.
 
@@ -64,13 +60,11 @@ African Disaster and Conflict Hotspots Data Guide and Product Design. 2008.
 
 Exemplar analyses for understanding vulnerability, impact, and recovery to large scale natural disasters (Aceh Tsunami).  (co-author) 2006.
 
-Nimble Books LLC.  300 books in print (Appendix A). 2005-present.
+"Thematic Guide to Land Use and  Land  Cover Data", 2005.
 
- "Thematic Guide to Land Use and  Land  Cover Data", 2005.
+"Lower Mekong Basin Flood Hazard Mapping and Vulnerability Assessment: Final Report." Kihei: Pacific Disaster Center, September 2004.
 
- "Lower Mekong Basin Flood Hazard Mapping and Vulnerability Assessment: Final Report." Kihei: Pacific Disaster Center, September 2004.
-
- "Technical Approach to Assessing the Mekong Delta's Vulnerability to Hazards, including Flooding."   Pacific Disaster Center.  February 2004.
+"Technical Approach to Assessing the Mekong Delta's Vulnerability to Hazards, including Flooding."   Pacific Disaster Center.  February 2004.
 
 Thematic Guide to Disaster Vulnerability Assessment (author) (online) (first draft).  Pacific Disaster Center.  Fall 2003.
 
@@ -116,10 +110,16 @@ LexisNexis Mobile for the Tablet PC (concept document), LexisNexis.  URL: TBD. S
 
 "The Internet Book Information Center," [on-line] (editor and publisher). Internet Book Information Center, Inc. URL: http://sunsite.unc.edu/ibic. March 30, 1994.
 
-Sextant: the magazine for Heathkit/Zenith computer users.  Many articles, June 1982-June 1984.
 
+### Published as Nimble Books (reverse chron)
 
-## Published by Nimble Books, 2005-present
+Chishti, Shaheen.  The Granddaughter Project. A novel of women's empowerment. Nimble Books: June 2021.
+
+Escobar, Pepe. Raging Twenties: Great Power Politics Meets Techno-Feudalism in the Era of COVID-19. Nimble Books: February 2021.
+
+Eccentric Dictionaries: An Experiment in AI-Enhanced Human Creativity. Nimble Books: January 2021.
+
+Andruss, Sr., Frank J. Pieces of History: Artifacts of the PT Boat Navy.  Nimble Books: December 2020.
 
 Rule, Bruce. Why the USS Thresher Was Lost. 2018.
 
@@ -554,7 +554,7 @@ Zimmerman, W. Frederick. Unauthorized Half-Blood Prince Update: News and Specula
 Zimmerman, W. Frederick. Basic Documents about the Treatment of Detainees at Guantanamo and Abu Ghraib. 2004.
 
 
-## Employment
+### Employment
 
 
 Publisher, Nimble Books LLC 2006 - now
@@ -584,4 +584,3 @@ Treasurer, Ozone House, 1987-1988
 Temporary employment, 1985-1987
 
 Staff Writer, Sextant Magazine, 1982 - 1984
-

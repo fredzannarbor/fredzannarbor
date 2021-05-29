@@ -1,12 +1,14 @@
 # Curriculum Vitae
 - [Curriculum Vitae](#curriculum-vitae)
-    - [Products & Major Work Deliverables](#products--major-work-deliverables)
-    - [Published as Nimble Books (reverse chron)](#published-as-nimble-books-reverse-chron)
+    - [Products, Articles, & Major Work Deliverables](#products-articles--major-work-deliverables)
+    - [Published by Nimble Books (reverse chron)](#published-by-nimble-books-reverse-chron)
     - [Employment](#employment)
   
-### Products & Major Work Deliverables
+### Products, Articles, & Major Work Deliverables
 
 Nimble AI.  Text generation, analytics, and data exploration tools for authors, publishers, and readers. https://nimblebooks.com:5002.  March 2021.
+
+A prospectus for long-form completions. https://www.nimblebooks.com/long-form-completions-with-openais-gpt-3/. Nimble Books. March 2021.
 
 Iran Conflict Tracker capsule for Samsung Bixby multimodal natural-language AI-powered personal assistant. Conversational interaction provides low-agita, low-compulsiveness approach to maintaining current awareness. January 2020.
 
@@ -111,7 +113,7 @@ LexisNexis Mobile for the Tablet PC (concept document), LexisNexis.  URL: TBD. S
 "The Internet Book Information Center," [on-line] (editor and publisher). Internet Book Information Center, Inc. URL: http://sunsite.unc.edu/ibic. March 30, 1994.
 
 
-### Published as Nimble Books (reverse chron)
+### Published by Nimble Books (reverse chron)
 
 Chishti, Shaheen.  The Granddaughter Project. A novel of women's empowerment. Nimble Books: June 2021.
 

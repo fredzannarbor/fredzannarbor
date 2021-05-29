@@ -1,37 +1,16 @@
 # Curriculum Vitae
 
-## Employment
-
-Founder, AltBrains Workshop LLC, March 2019 - now
-
-Publisher, Nimble Books LLC 2006 - now
-
-Product Manager II, Cengage Learning May 2017 - October 2019
-
-Founder, PageKicker Corp. 2015 - 2017
-
-Product Consultant, LexisNexis, June 2000 - November 2002
-
-Manager of Design & Usabilty, LexisNexis, December 1999 - May 2000
-
-Product Manager, LexisNexis, August 1997 - December 1999
-
-Information Scientist & Associate Staff Attorney, Consortium for International Earth Science Information Network, June 1996 - July 1997
-
-Research Scientist, Environmental Research Institute of Michigan, February 1992 - May 1996
-
-Publications Specialist, Environmental Research Institute of Michigan, January 1990 - January 1992
-
-Editorial Assistant, Automobile Magazine, 1989-1990
-
-Treasurer, Ozone House, 1987-1988
-
-Temporary employment, 1985-1987
-
-Staff Writer, Sextant Magazine, 1982 - 1984
-
-
 ## Publications & Deliverables
+
+Chishti, Shaheen.  The Granddaughter Project. A novel of women's empowerment. Nimble Books: June 2021.
+
+Nimble AI.  Text generation, analytics, and data exploration tools for authors, publishers, and readers. https://nimblebooks.com:5002.  March 2021.
+
+Escobar, Pepe. Raging Twenties: Great Power Politics Meets Techno-Feudalism in the Era of COVID-19. Nimble Books: February 2021.
+
+Zimmerman, Frederick.  Eccentric Dictionaries: An Experiment in AI-Enhanced Human Creativity. Nimble Books: January 2021.
+
+Andruss, Sr., Frank J. Pieces of History: Artifacts of the PT Boat Navy.  Nimble Books: December 2020.
 
 Iran Conflict Tracker capsule for Samsung Bixby multimodal natural-language AI-powered personal assistant. Conversational interaction provides low-agita, low-compulsiveness approach to maintaining current awareness. January 2020.
 
@@ -573,4 +552,36 @@ Zimmerman, W. Frederick. "The Solomon Key" and Beyond: DIGITAL FORTRESS, ANGELS 
 Zimmerman, W. Frederick. Unauthorized Half-Blood Prince Update: News and Speculation about Harry Potter Book Six by J. K. Rowling. 2004.
 
 Zimmerman, W. Frederick. Basic Documents about the Treatment of Detainees at Guantanamo and Abu Ghraib. 2004.
+
+
+## Employment
+
+
+Publisher, Nimble Books LLC 2006 - now
+
+Founder, AltBrains Workshop LLC, March 2019 - now
+
+Product Manager II, Cengage Learning May 2017 - October 2019
+
+Founder, PageKicker Corp. 2015 - 2017
+
+Product Consultant, LexisNexis, June 2000 - November 2002
+
+Manager of Design & Usabilty, LexisNexis, December 1999 - May 2000
+
+Product Manager, LexisNexis, August 1997 - December 1999
+
+Information Scientist & Associate Staff Attorney, Consortium for International Earth Science Information Network, June 1996 - July 1997
+
+Research Scientist, Environmental Research Institute of Michigan, February 1992 - May 1996
+
+Publications Specialist, Environmental Research Institute of Michigan, January 1990 - January 1992
+
+Editorial Assistant, Automobile Magazine, 1989-1990
+
+Treasurer, Ozone House, 1987-1988
+
+Temporary employment, 1985-1987
+
+Staff Writer, Sextant Magazine, 1982 - 1984
 

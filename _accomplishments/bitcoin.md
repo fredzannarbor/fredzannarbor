@@ -1,6 +1,6 @@
 ---
 job_title: Publisher
-resume_goal: [ "developer" ]
+resume_goal: [ "developer", "blockchain" ]
 keywords: software, Python, developer, web, 21.co
 employer: PageKicker
 ---

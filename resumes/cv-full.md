@@ -10,7 +10,9 @@ Nimble AI.  Text generation, analytics, and data exploration tools for authors, 
 
 A prospectus for long-form completions. https://www.nimblebooks.com/long-form-completions-with-openais-gpt-3/. Nimble Books. March 2021.
 
-Iran Conflict Tracker capsule for Samsung Bixby multimodal natural-language AI-powered personal assistant. Conversational interaction provides low-agita, low-compulsiveness approach to maintaining current awareness. January 2020.
+AltBrains Workshop.  Capsule for Samsung Bixby multimodal natural-language AI-powered personal assistant that enables users to create personal topic trackers. October 2020.
+
+Iran Conflict Tracker capsule for Samsung Bixby. January 2020.
 
 Quotation Bank.  Unix fortune command for Samsung Bixby.  January 2020.
 
@@ -111,7 +113,6 @@ LexisNexis Mobile for the Tablet PC (concept document), LexisNexis.  URL: TBD. S
 "Rights and Global Environmental Change," in "Political Institutions and Global Environmental Change," [on-line]. CIESIN. URL: http://www.ciesin.org:80/TG/PI/RIGHTS/rights.html. 1994.
 
 "The Internet Book Information Center," [on-line] (editor and publisher). Internet Book Information Center, Inc. URL: http://sunsite.unc.edu/ibic. March 30, 1994.
-
 
 ### Published by Nimble Books (reverse chron)
 

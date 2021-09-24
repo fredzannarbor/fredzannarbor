@@ -1,9 +1,11 @@
 # STAR framework accomplishments
 
-Situation:
-Task:
-Action:
-Result:
+(negative example)
+Situation: I had a creative passion for film
+Task:  I got into film school, motivated probably by 800 GRE
+Action:  I read all about film & writing, ultimately appliedwent, learned, had to withdraw
+Result: Many crucial learnings about screen writing, drama remain with me and are now (long arc of history) relevant in voice/multimedia 
+Creative outlet as a publisher and indeed as a product manager
 
 
 job_title:  Product Consultant
@@ -50,7 +52,7 @@ resume_goal: ["developer" ]
 keywords: product, voice
 employer: AltBrains Workshop LLC
 ---
-As Samsung Bixby Premier Developer, defined & built multimodal voice publishing system for content owners using natural language understanding (NLU), conversation design, action models in JavaScript, and a Python Flask interface to a restdb (noSQL) user and content database.---
+As Samsung Bixby Premier Developer,defined & built multimodal voice publishing system for content owners using natural language understanding (NLU), conversation design, action models in JavaScript, and a Python Flask interface to a restdb (noSQL) user and content database.- --
 job_title:  publisher
 resume_goal: [ "product_mgr", "KDP_team" ]
 keywords: publishing
